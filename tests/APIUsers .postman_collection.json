@@ -1,0 +1,147 @@
+{
+	"id": "7098a98d-b936-3403-e938-dac1fd8ba313",
+	"name": "APIUsers ",
+	"description": "",
+	"order": [
+		"e60b65a0-8517-c314-5d4b-996df8e12df4",
+		"8ae801d1-eb0c-b54f-6b19-2e423bb8ad83",
+		"7ee02b40-6b3a-4fa5-61d0-bd617defd782",
+		"b702cfb9-32f2-f543-48ef-a5d8f5a4cbc8",
+		"3636ced5-32a0-bde2-97d2-ffdf7451de48"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1655634413511,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "3636ced5-32a0-bde2-97d2-ffdf7451de48",
+			"headers": "",
+			"headerData": [],
+			"url": "http://{{host}}:{{port}}/{{path}}/deleteUsersById/{{id}}",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655650355956,
+			"name": "DELETE User",
+			"description": "",
+			"collectionId": "7098a98d-b936-3403-e938-dac1fd8ba313",
+			"responses": []
+		},
+		{
+			"id": "7ee02b40-6b3a-4fa5-61d0-bd617defd782",
+			"headers": "",
+			"headerData": [],
+			"url": "http://{{host}}:{{port}}/{{path}}/getusersById/{{id}}",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655650337555,
+			"name": "GET User",
+			"description": "",
+			"collectionId": "7098a98d-b936-3403-e938-dac1fd8ba313",
+			"responses": []
+		},
+		{
+			"id": "8ae801d1-eb0c-b54f-6b19-2e423bb8ad83",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://{{host}}:{{port}}/{{path}}/createUsers",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655650802589,
+			"name": "CREATE User",
+			"description": "",
+			"collectionId": "7098a98d-b936-3403-e938-dac1fd8ba313",
+			"responses": [],
+			"rawModeData": " {\n        \"id\": 1,\n        \"name\": \"aaaa\",\n        \"email\": \"string\",\n        \"birthDate\": \"string\",\n        \"address\": {\n            \"id\": 1,\n            \"street\": \"aaaa\",\n            \"state\": \"string\",\n            \"city\": \"string\",\n            \"country\": \"string\",\n            \"zip\": \"string\"\n        }\n    }"
+		},
+		{
+			"id": "b702cfb9-32f2-f543-48ef-a5d8f5a4cbc8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://{{host}}:{{port}}/{{path}}/updateUsersById/{{id}}",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655650793597,
+			"name": "UPDATE User",
+			"description": "",
+			"collectionId": "7098a98d-b936-3403-e938-dac1fd8ba313",
+			"responses": [],
+			"rawModeData": " {\n        \"id\": 1,\n        \"name\": \"aaaa\",\n        \"email\": \"string\",\n        \"birthDate\": \"string\",\n        \"address\": {\n            \"id\": 1,\n            \"street\": \"aaaa\",\n            \"state\": \"string\",\n            \"city\": \"string\",\n            \"country\": \"string\",\n            \"zip\": \"string\"\n        }\n    }"
+		},
+		{
+			"id": "e60b65a0-8517-c314-5d4b-996df8e12df4",
+			"headers": "//Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://{{host}}:{{port}}/{{path}}/getusers",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655650339213,
+			"name": "GET All Users",
+			"description": "",
+			"collectionId": "7098a98d-b936-3403-e938-dac1fd8ba313",
+			"responses": []
+		}
+	]
+}
