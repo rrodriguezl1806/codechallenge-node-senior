@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "node index.js && npm run server",
+    "start": "node index.js",
     "server": "json-server --watch --port 27001 db/db.json",
-    "test": "jest"
+    "test": "jest",
+    "build": "node build"
   },
   "dependencies": {
     "axios": "^0.27.2",
